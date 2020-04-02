@@ -1,0 +1,28 @@
+Package: MADworld
+Type: Package
+Title: Mad A Database meta-package: this package allows access to the
+    entire MAD framework
+Version: 0.1-0
+Authors@R: c(
+    person("William D.", "Pearse", email = "will.pearse@gmail.com", role = c("aut", "cre"), comment=c(ORCID="0000-0002-6241-3164")),
+    person("Helmus", "Matthew R.", role = "aut")
+    )
+Maintainer: William D. Pearse <will.pearse@gmail.com>
+Description: Provides a series of wrapper functions that integrate all
+    the official packages within the MADworld. This includes stable
+    packages (e.g., MADtraits and MADcomm), as well as prototype
+    packages (e.g., MADpandemic and MADneon). Contains synthetic
+    functions for joining data distributed among MAD packages (e.g.,
+    MADecology), as well as wrapper functions to generate useful
+    auxilliary data (e.g., phylogenies and geographic data).
+License: MIT + file LICENSE
+RoxygenNote: 7.0.2
+Imports:
+    cli (>= 2.0.1),
+    stringi (>= 1.4.6),
+    crayon (>= 1.3.4)
+Suggests: 
+    MADtraits (>= 1.0-0),
+    MADcomm (>= 1.0-0),
+    MADneon (>= 0.0-1),
+    MADpandemic (>= 0.0-1)
